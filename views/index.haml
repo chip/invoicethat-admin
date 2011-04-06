@@ -1,0 +1,4 @@
+%h3= "Total number of users is #{@users.count}"
+%div
+  - @users.each do |u|
+    %div= u.email

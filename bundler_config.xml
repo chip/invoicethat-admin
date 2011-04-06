@@ -1,0 +1,2 @@
+mysql:  
+  config: /usr/local/mysql/bin/mysql_config  
