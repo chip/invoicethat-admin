@@ -1,4 +1,19 @@
+%a{:href => "/users/beta/new"}
+  Create Beta Account
 %h3= "Total number of users is #{@users.count}"
-%div
-  - @users.each do |u|
-    %div= u.email
+%table
+  %tbody
+    %tr
+      %th Email
+      %th Subscription Type
+      %th Setup
+      %th Enabled
+      %th Activated at
+      
+    - @users.each do |u|
+      %tr
+        %td= u.email
+        %td= u.subscription_type.braintree_sku rescue nil
+        %td= u.setup
+        %td= u.enabled
+        %td= u.activated_at
