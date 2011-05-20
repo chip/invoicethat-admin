@@ -1,8 +1,17 @@
-%form{:action => '/users/beta', :method => 'POST'}
-  %label Email
-  %input{:type => 'text', :name => 'email'}
+%h1 Create Beta user account
 
-  %label Password
-  %input{:type => 'text', :name => 'password'}
-  
-  %input{:type => 'submit', :name => 'commit'}
+%form{:action => '/users/beta', :method => 'POST'}
+  %p
+    %label Name
+  %p
+    %input{:type => 'text', :name => 'name', :size => "50"}
+  %p
+    %label Email
+  %p
+    %input{:type => 'text', :name => 'email', :size => "50"}
+  %p
+    %label Password
+  %p
+    %input{:type => 'text', :name => 'password', :size => "50", :value => "Beta2011"}
+  %p  
+    %input{:type => 'submit', :name => 'commit'}
